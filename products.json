@@ -5,7 +5,7 @@
     "description": "Stylish pointed-toe flats in rich brown, featuring a statement diamante bow accent. Perfect for office wear or casual outings — effortlessly chic and comfortable all day.",
     "price": 899,
     "category": "Flats",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.07.jpeg",
+    "imageUrl": "/images/brown-elegance-bow-flats.jpeg",
     "size": "36, 37, 38, 39, 40",
     "color": "Brown",
     "stock": 12
@@ -16,7 +16,7 @@
     "description": "Trendy block heels with a transparent nude-clear upper and a charming bow detail at the toe. Adds elegance to any outfit — from evening wear to brunch dates.",
     "price": 1199,
     "category": "High Heels",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.10.jpeg",
+    "imageUrl": "/images/clear-bow-detail-block-heels.jpeg",
     "size": "36, 37, 38, 39",
     "color": "Nude/Clear",
     "stock": 8
@@ -27,7 +27,7 @@
     "description": "Premium suede cross-strap slides with a gold hexagonal buckle and hand-stitched white detailing. A perfect blend of comfort and style for everyday wear.",
     "price": 849,
     "category": "Sandals",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.11.jpeg",
+    "imageUrl": "/images/buckle-cross-strap-suede-slides.jpeg",
     "size": "37, 38, 39, 40",
     "color": "Beige/Tan",
     "stock": 15
@@ -38,7 +38,7 @@
     "description": "Luxurious pointed flats in olive-brown with an oversized rhinestone-encrusted bow. Glamour meets comfort — ideal for festive occasions and evening parties.",
     "price": 999,
     "category": "Flats",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.12 (1).jpeg",
+    "imageUrl": "/images/rhinestone-bow-pointed-flats.jpeg",
     "size": "36, 37, 38, 39",
     "color": "Olive Brown",
     "stock": 10
@@ -49,7 +49,7 @@
     "description": "Traditional jutti with stunning multicolor floral embroidery on a peach base with a gold metallic trim. Light, breathable, and perfect for kurtas and lehengas.",
     "price": 799,
     "category": "Daily Wear",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.12.jpeg",
+    "imageUrl": "/images/embroidered-floral-jutti.jpeg",
     "size": "36, 37, 38, 39, 40",
     "color": "Peach/Multicolor",
     "stock": 20
@@ -60,7 +60,7 @@
     "description": "Sleek patent leather kitten heel mules in glossy black with a minimalist buckle strap. Effortlessly sophisticated — pairs beautifully with trousers, jeans, or dresses.",
     "price": 1099,
     "category": "High Heels",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.13.jpeg",
+    "imageUrl": "/images/glossy-patent-kitten-heel-mules.jpeg",
     "size": "36, 37, 38, 39",
     "color": "Black",
     "stock": 7
@@ -71,7 +71,7 @@
     "description": "Comfortable flat thong sandals adorned with delicate embellishments on the straps. Casual yet eye-catching — a summer staple for walks, shopping, and outings.",
     "price": 749,
     "category": "Sandals",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.15 (1).jpeg",
+    "imageUrl": "/images/embellished-thong-comfort-sandals.jpeg",
     "size": "37, 38, 39, 40",
     "color": "Tan",
     "stock": 14
@@ -82,7 +82,7 @@
     "description": "Elegant flat jutti featuring intricate pastel floral threadwork on a beige base. A true artisan piece — perfect for ethnic wear, weddings, and festive celebrations.",
     "price": 949,
     "category": "Daily Wear",
-    "imageUrl": "images/WhatsApp Image 2026-06-22 at 10.49.15.jpeg",
+    "imageUrl": "/images/pastel-floral-embroidered-jutti.jpeg",
     "size": "36, 37, 38, 39, 40",
     "color": "Beige/Multicolor",
     "stock": 18
