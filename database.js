@@ -2,7 +2,14 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const fs = require('fs');
 
-const dbPath = path.join(__dirname, 'database.sqlite');
+const isVercel = process.env.VERCEL === '1' || process.env.NODE_ENV === 'production';
+const sourceDbPath = path.join(__dirname, 'database.sqlite');
+const dbPath = isVercel ? path.join('/tmp', 'database.sqlite') : sourceDbPath;
+
+if (isVercel && !fs.existsSync(dbPath) && fs.existsSync(sourceDbPath)) {
+  fs.copyFileSync(sourceDbPath, dbPath);
+}
+
 const db = new sqlite3.Database(dbPath);
 
 function initDb() {
