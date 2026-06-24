@@ -1,0 +1,14 @@
+{
+  "name": "ladli72",
+  "version": "1.0.0",
+  "description": "LADLI 72 full stack site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-cache": "^5.1.2",
+    "sqlite3": "^6.0.1"
+  }
+}

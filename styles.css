@@ -1,0 +1,155 @@
+/* styles.css – responsive design for LADLI 72 */
+:root {
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --gold: #C9A84C;
+  --gold-light: #E8B4A0;
+  --gold-pale: #f5f5dc;
+  --black: #0D0B08;
+  --dark: #1a1713;
+  --white: #ffffff;
+  --gray: #777777;
+  --gray-light: #cccccc;
+  --nav-h: 70px;
+  --transition: all 0.3s ease;
+}
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: var(--nav-h);
+  background: var(--white);
+}
+.hamburger { background: none; border: none; font-size: 1.5rem; cursor: pointer; display: none; }
+@media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: block; } }
+.logo { display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; }
+/* Responsive logo scaling */
+@media (max-width: 600px) {
+  .logo-main { font-size: 18px; }
+  .logo-sub { font-size: 6px; }
+}
+.logo-main {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.logo-sub {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Mobile navigation – hidden by default */
+.mobile-nav {
+  display: none;
+}
+
+/* Grid for shop pages – responsive */
+.grid-3, .grid-4 {
+  display: grid;
+  gap: 1rem;
+}
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+/* Product cards – ensure they shrink nicely */
+.product-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-inner { flex-direction: column; height: auto; }
+  .logo { margin-bottom: 0.5rem; }
+  .mobile-nav { display: flex; justify-content: space-between; width: 100%; }
+  .menu-btn { display: block; font-size: 1.5rem; cursor: pointer; }
+  .nav-links { display: none; list-style: none; }
+  /* Mobile menu hidden by default */
+  .nav-links.active { display: flex; flex-direction: column; gap: 12px; background: var(--white); position: absolute; top: var(--nav-h); left: 0; right: 0; padding: 12px 20px; border-top: 1px solid var(--gray-light); }
+  .grid-3, .grid-4 { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .logo-main { font-size: 1.25rem; }
+  .logo-sub { font-size: 0.6rem; }
+}
+
+/* Category grid for mobile */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.cat-card {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cat-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cat-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cat-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cat-count {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Checkout and Orders styling */
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gray-light);
+}
+.admin-order-status-select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-light);
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 12px;
+  cursor: pointer;
+}
